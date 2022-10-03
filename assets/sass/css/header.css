@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+  .header {
+    padding-top: 100px;
+  }
+  .header-list-small__item:not(:last-child) {
+    margin-right: 15px;
+  }
+}/*# sourceMappingURL=header.css.map */

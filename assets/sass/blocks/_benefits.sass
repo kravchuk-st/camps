@@ -1,0 +1,38 @@
+.benefits
+  &__subtitle
+    margin-top: 70px
+    margin-bottom: 40px
+    padding: 50px 0
+    color: $color-active
+    border-top: 1px solid $color-text
+    border-bottom: 1px solid $color-text
+  &__list
+    margin-top: 45px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    column-gap: 30px
+    row-gap: 40px
+  &__item
+    width: calc( 50% - 15px )
+    display: flex
+    align-items: center
+    column-gap: 20px
+    text-align: left
+    &::before
+      width: 90px
+      height: 90px
+      content: url(../img/svg/benefits/1.svg)
+
+.benefit
+  &__number
+    margin-bottom: -5px
+    width: max-content
+    font-family: Days, sans-serif
+    font-size: 64px
+    line-height: 1
+    letter-spacing: -0.03em
+    color: #efefef
+  &__text
+    font-size: 2.2rem
+    letter-spacing: 0.02em
