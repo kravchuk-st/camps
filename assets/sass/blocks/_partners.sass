@@ -1,0 +1,26 @@
+.partners
+  &__title
+    margin-top: 40px
+  .marquee
+    margin-top: 40px
+    width: 100%
+    overflow: hidden
+    &__content
+      width: max-content
+      display: flex
+      animation: marquee 30s linear infinite
+      span
+        margin-left: 70px
+        width: max-content
+        display: flex
+        align-items: center
+        column-gap: 70px
+    &__img
+      width: auto
+      height: auto
+
+@keyframes marquee
+  0%
+    transform: translateX(0%)
+  100%
+    transform: translateX(-50%)

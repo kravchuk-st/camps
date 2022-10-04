@@ -1,5 +1,5 @@
 .reviews
-  height: 755px
+  min-height: 755px
   background-image: url(../img/reviews-bg.jpg)
   backdrop-filter: blur(10px)
   background-size: cover
@@ -10,3 +10,132 @@
   &__subtitle
     margin-top: 20px
     font-size: 2.7rem
+
+.slider
+  position: relative
+
+.swiper
+  margin-top: 40px
+  padding: 0 0 37px
+  width: 100%
+  max-width: 1286px
+  height: 100%
+  &-slide
+    padding: 20px 20px 30px
+    height: auto
+    display: flex
+    column-gap: 20px
+    background-color: $color-card-bg
+    border-radius: 10px
+  &-pagination
+    display: flex
+    justify-content: center
+    align-items: center
+    &-bullet
+      width: 7px
+      height: 7px
+    &-bullet-active
+      width: 12px
+      height: 12px
+      background-color: $color-bg
+  .slide
+    &__img img
+      width: 100px
+      height: 100px
+      object-fit: cover
+      border: 5px solid $color-bg
+      border-radius: 50%
+    &__body
+      text-align: left
+      width: calc(100% - 120px)
+    &__title
+      font-family: "Days", sans-serif
+      font-size: 2.7rem
+    &__date
+      margin-top: 5px
+      display: inline-block
+      font-size: 1.8rem
+      letter-spacing: 0.02em
+      color: #969696
+    &__text
+      margin-top: 10px
+      font-size: 2rem
+      letter-spacing: 0.02em
+  &__arrow
+    width: 40px
+    height: 40px
+    position: absolute
+    top: 180px
+    z-index: 100
+    background-position: center
+    background-repeat: no-repeat
+    background-size: contain
+    cursor: pointer
+    &_left
+      left: calc(0% - 25px)
+      background-image: url("../img/svg/arrow.svg")
+    &_right
+      right: calc(0% - 25px)
+      background-image: url("../img/svg/arrow.svg")
+      transform: scale(-1, 1)
+
+@media (min-width: 768px)
+  .slide__header-img
+    display: none
+
+@media (max-width: 1520px)
+.swiper__arrow
+  &_left
+    left: calc(0% - 45px)
+  &_right
+    right: calc(0% - 45px)
+
+@media (max-width: 1280px)
+.swiper__arrow
+  &_left
+    left: calc(0% - 60px)
+  &_right
+    right: calc(0% - 60px)
+
+@media (max-width: 1179px)
+  .swiper
+    &__arrow
+      width: 30px
+      height: 30px
+      &_left
+        left: calc(0% - 45px)
+      &_right
+        right: calc(0% - 45px)
+
+@media (max-width: 900px)
+.swiper__arrow
+  &_left
+    left: calc(0% - 35px)
+  &_right
+    right: calc(0% - 35px)
+
+@media (max-width: 768px)
+  .swiper
+    width: 80%
+    &__arrow
+      &_left
+        left: calc(0% - 5px)
+      &_right
+        right: calc(0% - 5px)
+    .slide__img
+      display: none
+    .slide__body
+      width: 100%
+    .slide__header
+      display: flex
+      align-items: center
+      column-gap: 15px
+      &-img
+        width: 60px
+        height: 60px
+      .slide__title
+        font-size: 1.6rem
+      .slide__date
+        font-size: 1.3rem
+    .slide__text
+      font-size: 1.6rem

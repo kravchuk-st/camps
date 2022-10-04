@@ -1,2 +1,79 @@
 .footer
-    padding: 20px 0
+  padding: 45px 0 80px
+  background-color: $color-bg
+  color: $color-light
+  .container
+    display: flex
+    justify-content: center
+    column-gap: 50px
+    row-gap: 15px
+  .logo
+    text-align: left
+    &__img
+      width: 310px
+      height: auto
+    &__descr
+      margin-top: 20px
+      width: 100%
+      max-width: 270px
+      font-size: 1.6rem
+      letter-spacing: 0.02em
+      color: $color-light
+  .menu
+    display: flex
+    align-items: center
+    column-gap: 65px
+    &__list
+      display: flex
+      align-items: center
+      column-gap: 35px
+      row-gap: 15px
+    &__link
+      font-size: 2rem
+      line-height: 1.05
+      color: $color-light
+      white-space: nowrap
+    &__btn
+      padding: 11px 38px 10px
+      font-weight: 500
+      border: 1px solid #efefef
+      text-transform: uppercase
+  &__text
+    margin-top: 40px
+    max-width: 770px
+    font-size: 16px
+    letter-spacing: 0.02em
+    text-align: left
+
+@media (min-width: 993px)
+  .footer__text_bottom
+    display: none
+
+@media (max-width: 992px)
+  .footer
+    padding-bottom: 60px
+    .container
+      flex-wrap: wrap
+      column-gap: 40px
+    & .logo__img
+      width: 268px
+    &__text
+      display: none
+    & .menu__list
+      flex-direction: column
+    &__text_bottom
+      margin-top: 25px
+      font-size: 1.6rem
+      letter-spacing: 0.02em
+      text-align: left
+@media (max-width: 768px)
+  .footer
+    padding-top: 35px
+    padding-bottom: 40px
+
+@media (max-width: 420px)
+  .footer
+    padding-bottom: 35px
+    .menu
+      flex-direction: column-reverse
+      row-gap: 15px
