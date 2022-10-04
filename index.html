@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" type="image/ico" href="./assets/img/favicon.ico"> -->
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/swiper.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Главная</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="./" class="logo header__logo">
+        <img class="logo__img" src="./assets/img/svg/logo.svg" alt="Logo img">
+      </a>
+      <nav class="navbar">
+        <ol class="navbar__list list-reset">
+          <li class="navbar__item"><a class="navbar__link" href="#">Лагеря</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#">Трансфер</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#">О нас</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#">Новости</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#">Контакты</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#">Кешбек</a></li>
+        </ol>
+      </nav>
+      <div class="cart">
+        <button class="cart__btn btn-reset">
+          <img src="./assets/img/svg/cart.svg" alt="Cart img" class="cart__img">
+          <span class="cart__count"></span>
+        </button>
+      </div>
+      <div class="tel">
+        <a href="tel:+88001013315" class="tel__link btn btn-reset">8 (800) 101 33 15</a>
+      </div>
+      <div>
+        <button class="burger btn-reset">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title text-light">Туроператор детского отдыха</h1>
+        <ul class="advantages hero__list list-reset">
+          <li class="advantages__item">
+            <img src="../assets/img/svg/advantages/1.svg" alt="advantages img" class="advantages__img">
+            <p class="advantages__text">
+              Официальный представитель ВДЦ Смена
+            </p>
+          </li>
+          <li class="advantages__item">
+            <img src="../assets/img/svg/advantages/1.svg" alt="advantages img" class="advantages__img">
+            <p class="advantages__text">
+              Более 11 лет опыта в организации детского отдыха
+            </p>
+          </li>
+          <li class="advantages__item">
+            <img src="../assets/img/svg/advantages/1.svg" alt="advantages img" class="advantages__img">
+            <p class="advantages__text">
+              Организация группового трансфера
+            </p>
+          </li>
+          <li class="advantages__item">
+            <img src="../assets/img/svg/advantages/1.svg" alt="advantages img" class="advantages__img">
+            <p class="advantages__text">
+              Официальный представитель ВДЦ Орлёнок
+            </p>
+          </li>
+          <li class="advantages__item">
+            <img src="../assets/img/svg/advantages/1.svg" alt="advantages img" class="advantages__img">
+            <p class="advantages__text">
+              Только проверенные лагеря
+            </p>
+          </li>
+          <li class="advantages__item">
+            <img src="../assets/img/svg/advantages/1.svg" alt="advantages img" class="advantages__img">
+            <p class="advantages__text">
+              В реестре туроператоров РТО № 023464
+            </p>
+          </li>
+        </ul>
+        <a href="#" class="btn hero__btn btn-reset">Выбрать лагерь</a>
+      </div>
+    </section>
+
+    <section class="timer">
+      <div class="contaimer">
+        <h2 class="timer__title text-light">До осенних каникул осталось:</h2>
+        <div class="timer__clock"></div>
+      </div>
+    </section>
+
+    <section class="booking">
+      <img class="booking__img booking__img_top" src="../assets/img/svg/wave.svg" alt="booking bg">
+      <div class="container">
+        <h3 class="booking__title text-active">
+          УСПЕЙ ЗАБРОНИРОВАТЬ ПУТЕВКУ ДЛЯ СВОЕГО РЕБЕНКА!
+        </h3>
+      </div>
+      <img class="booking__img booking__img_down" src="../assets/img/svg/wave.svg" alt="booking bg">
+    </section>
+
+    <section class="suggestions">
+      <div class="container">
+        <h2 class="suggestions__title text-light">Популярные предложения</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="card__img">
+              <img src="../assets/img/camps/1.jpg" alt="card img">
+            </div>
+            <h4 class="card__title">Ленинградская область</h4>
+            <div class="card__btns">
+              <a href="#" class="btn card__btn">Подробнее</a>
+              <a href="#" class="btn btn_active card__btn">Другие предложения</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="../assets/img/camps/2.jpg" alt="card img">
+            </div>
+            <h4 class="card__title">Краснодарский край</h4>
+            <div class="card__btns">
+              <a href="#" class="btn card__btn">Подробнее</a>
+              <a href="#" class="btn btn_active card__btn">Другие предложения</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="../assets/img/camps/3.jpg" alt="card img">
+            </div>
+            <h4 class="card__title">Московская область</h4>
+            <div class="card__btns">
+              <a href="#" class="btn card__btn">Подробнее</a>
+              <a href="#" class="btn btn_active card__btn">Другие предложения</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seasons">
+      <img class="seasons__img" src="../assets/img/svg/wave.svg" alt="seasons bg">
+      <div class="container">
+        <h2 class="seasons__title">Осенние/зимние смены</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="card__img">
+              <img src="../assets/img/camps/seasons/1.jpg" alt="card img">
+            </div>
+            <h4 class="card__title">ДЦ "КОМПЬЮТЕРиЯ"</h4>
+            <h6 class="card__subtitle">Тверская область</h6>
+            <div class="card__btns">
+              <a href="#" class="btn card__btn">Подробнее</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="../assets/img/camps/seasons/2.jpg" alt="card img">
+            </div>
+            <h4 class="card__title">Город мастеров</h4>
+            <h6 class="card__subtitle">Московская область</h6>
+            <div class="card__btns">
+              <a href="#" class="btn card__btn">Подробнее</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="../assets/img/camps/seasons/3.jpg" alt="card img">
+            </div>
+            <h4 class="card__title">Открывая горизонты</h4>
+            <h6 class="card__subtitle">Московская область</h6>
+            <div class="card__btns">
+              <a href="#" class="btn card__btn">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shifts">
+      <div class="container">
+        <h2 class="shifts__title">Авторские смены</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="card__img">
+              <img src="../assets/img/camps/shifts/1.jpg" alt="card img">
+            </div>
+            <h4 class="card__title">Batyrev Camp</h4>
+            <h6 class="card__subtitle">Тверская область</h6>
+            <div class="card__btns">
+              <a href="#" class="btn card__btn">Подробнее</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="../assets/img/camps/shifts/2.jpg" alt="card img">
+            </div>
+            <h4 class="card__title">Город мастеров</h4>
+            <h6 class="card__subtitle">ВДЦ “Смена”</h6>
+            <div class="card__btns">
+              <a href="#" class="btn card__btn">Подробнее</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="../assets/img/camps/shifts/3.jpg" alt="card img">
+            </div>
+            <h4 class="card__title">Открывая горизонты</h4>
+            <h6 class="card__subtitle">ВДЦ “Орлёнок”</h6>
+            <div class="card__btns">
+              <a href="#" class="btn card__btn">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container">
+        <h2 class="benefits__title">Наши преимущества</h2>
+        <ol class="benefits__list list-reset">
+          <li class="benefits__item">
+            <div class="benefits__descr">
+              <p class="benefit__number">01</p>
+              <p class="benefit__text">Квалифицированные сотрудники</p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__descr">
+              <p class="benefit__number">02</p>
+              <p class="benefit__text">Поддержка до и после покупки тура</p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__descr">
+              <p class="benefit__number">03</p>
+              <p class="benefit__text">Официальный представитель в каждом лагере 24/7​</p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__descr">
+              <p class="benefit__number">04</p>
+              <p class="benefit__text">Нам доверяют крупные компании</p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__descr">
+              <p class="benefit__number">05</p>
+              <p class="benefit__text">Ежегодно отправляем более 5 000 детей на отдых</p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__descr">
+              <p class="benefit__number">06</p>
+              <p class="benefit__text">Индивидуальный подход к каждому клиенту</p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__descr">
+              <p class="benefit__number">07</p>
+              <p class="benefit__text">Реализовано более 50 государственных контрактов</p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__descr">
+              <p class="benefit__number">08</p>
+              <p class="benefit__text">Организация безопасного тура для детей</p>
+            </div>
+          </li>
+        </ol>
+        <h3 class="benefits__subtitle text-active">
+          Нам можно доверить организацию отдыха ваших детей
+        </h3>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title">Отзывы Родителей</h2>
+        <p class="reviews__subtitle">
+          Нам можно доверить организацию отдыха ваших детей!
+        </p>
+        <div class="slider">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide__img">
+                  <img src="./assets/img/sl1.jpg" alt="slide img">
+                </div>
+                <div class="slide__body">
+                  <div class="slide__header">
+                    <img class="slide__header-img" src="./assets/img/sl1.jpg" alt="slide img">
+                    <div class="slide__header-desct">
+                      <h4 class="slide__title">Стоякина Татьяна</h4>
+                      <time class="slide__date" datetime="2021-12-12">12.12.2021</time>
+                    </div>
+                  </div>
+                  <p class="slide__text">
+                    Кстати, предприниматели в сети интернет и по сей день остаются уделом либералов, которые жаждут быть заблокированы в рамках своих собственных рациональных ограничений. Наше дело не так однозначно, как может показаться: высококачественный прототип будущего проекта предопределяет высокую востребованность системы обучения кадров, соответствующей насущным потребностям. Являясь всего лишь частью общей картины, непосредственные участники технического прогресса неоднозначны и будут ассоциативно распределены по отраслям.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide__img">
+                  <img src="./assets/img/sl2.jpg" alt="slide img">
+                </div>
+                <div class="slide__body">
+                  <div class="slide__header">
+                    <img class="slide__header-img" src="./assets/img/sl2.jpg" alt="slide img">
+                    <div class="slide__header-desct">
+                      <h4 class="slide__title">Петрова Анастасия</h4>
+                      <time class="slide__date" datetime="2022-08-04">04.08.2022</time>
+                    </div>
+                  </div>
+                  <p class="slide__text">
+                    Принимая во внимание показатели успешности, выбранный нами инновационный путь предопределяет высокую востребованность прогресса профессионального сообщества. Как принято считать, ключевые особенности структуры проекта будут ассоциативно распределены по отраслям.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper__arrow swiper__arrow_left"></div>
+          <div class="swiper__arrow swiper__arrow_right"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <h2 class="partners__title">Наши партнеры</h2>
+      </div>
+      <div class="marquee">
+        <div class="marquee__content">
+          <span>
+            <img class="marquee__img" src="./assets/img/marquee/0.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/1.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/2.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/3.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/4.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/5.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/6.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/7.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/8.png" alt="marquee img">
+          </span>
+          <span>
+            <img class="marquee__img" src="./assets/img/marquee/0.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/1.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/2.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/3.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/4.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/5.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/6.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/7.png" alt="marquee img">
+            <img class="marquee__img" src="./assets/img/marquee/8.png" alt="marquee img">
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="logo footer__logo">
+        <a class="logo__linck" href="./">
+          <img class="logo__img" src="./assets/img/svg/logo-footer.svg" alt="footer logo">
+        </a>
+        <p class="logo__descr">
+          ООО “Грааль”, т. 8 (800) 101-33-15 
+          ИНН/КПП 6154563477/616701001 
+          ОГРН 1096154004748
+        </p>
+      </div>
+      <div class="footer__info">
+        <div class="menu">
+          <ol class="menu__list list-reset">
+            <li class="menu__item"><a class="menu__link" href="#">Трансфер</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Лагеря</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Оферта</a></li>
+          </ol>
+          <button class="menu__btn btn btn-reset">ОСТАВИТЬ ЗАЯВКУ</button>
+        </div>
+        <p class="footer__text">
+          © ООО “Грааль”, 2017-2022. Сайт не является публичной офертой и носит информационный характер. Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации и объектов без предварительного согласия правообладателя.
+        </p>
+      </div>
+      <p class="footer__text_bottom">
+          © ООО “Грааль”, 2017-2022. Сайт не является публичной офертой и носит информационный характер. Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации и объектов без предварительного согласия правообладателя.
+        </p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/swiper.min.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script type="module" src="./assets/js/script.js"></script>
+</body>
