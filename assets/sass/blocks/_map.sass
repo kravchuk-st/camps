@@ -1,0 +1,87 @@
+[class*="copyrights-pane"]
+  display: none !important
+
+.ya_map
+  font-family: arial
+  font-size: 12px
+  color: #454545
+
+.map
+  width: 100%
+  height: 570px
+  position: relative
+  background-image: url('../img/map.jpg')
+  background-position: 25% center
+  background-size: cover
+  background-repeat: no-repeat
+  .contacts
+    padding: 40px 20px 25px 40px
+    width: 100%
+    max-width: 642px
+    height: 100%
+    position: absolute
+    top: 0
+    left: 10vw
+    z-index: 5
+    text-align: left
+    color: $color-text
+    background-color: $color-light
+    &__title
+      font-size: 4.8rem
+    &__body
+      margin-top: 50px
+      display: flex
+      flex-direction: column
+      row-gap: 20px
+      font-size: 2rem
+    &__address::before
+      width: 27px
+      height: 36px
+      content: url(../img/svg/map/map.svg)
+    &__phone::before
+      width: 28px
+      height: 29px
+      content: url(../img/svg/map/phone.svg)
+    .mail-list
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      row-gap: 16px
+    &__address,
+    &__phone,
+    .mail__item,
+    &__schedule
+      display: flex
+      align-items: center
+      column-gap: 14px
+    .mail__item::before
+      width: 28px
+      height: 23px
+      content: url(../img/svg/map/mail.svg)
+    .mail__linck,
+    &__days
+      display: flex
+      flex-direction: column
+      row-gap: 0
+      line-height: 1
+    .mail__linck .text-secondary
+      font-size: 1.8rem
+    &__schedule::before
+      width: 28px
+      height: 28px
+      content: url(../img/svg/map/clock.svg)
+    &__footer
+      margin-top: 20px
+      display: flex
+      align-items: center
+      column-gap: 25px
+    .social-list
+      display: flex
+      align-items: center
+      column-gap: 20px
+    .grade
+      margin-left: auto
+      width: 220px
+      height: 60px
+      background-color: #dedede
+
+@media (max-width: 768px)

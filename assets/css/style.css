@@ -84,6 +84,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  color: #000;
+}
+
 .container {
   margin: 0 auto;
   width: 90%;
@@ -157,6 +161,10 @@ input[type=tel]:hover::placeholder {
 
 .text-active {
   color: #ff0081;
+}
+
+.text-secondary {
+  color: #969696;
 }
 
 @media (max-width: 992px) {
@@ -337,7 +345,6 @@ input[type=tel]:hover::placeholder {
     opacity: 0;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     row-gap: 40px;
     background: #000;
     transition: all 0.3s ease-in-out;
@@ -536,6 +543,7 @@ input[type=tel]:hover::placeholder {
 
 .booking {
   padding: 0;
+  font-size: 0;
   line-height: 0;
 }
 .booking__title {
@@ -870,6 +878,109 @@ input[type=tel]:hover::placeholder {
     transform: translateX(-50%);
   }
 }
+[class*=copyrights-pane] {
+  display: none !important;
+}
+
+.ya_map {
+  font-family: arial;
+  font-size: 12px;
+  color: #454545;
+}
+
+.map {
+  width: 100%;
+  height: 570px;
+  position: relative;
+  background-image: url("../img/map.jpg");
+  background-position: 25% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.map .contacts {
+  padding: 40px 20px 25px 40px;
+  width: 100%;
+  max-width: 642px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 10vw;
+  z-index: 5;
+  text-align: left;
+  color: #000;
+  background-color: #fff;
+}
+.map .contacts__title {
+  font-size: 4.8rem;
+}
+.map .contacts__body {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 2rem;
+}
+.map .contacts__address::before {
+  width: 27px;
+  height: 36px;
+  content: url(../img/svg/map/map.svg);
+}
+.map .contacts__phone::before {
+  width: 28px;
+  height: 29px;
+  content: url(../img/svg/map/phone.svg);
+}
+.map .contacts .mail-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 16px;
+}
+.map .contacts__address, .map .contacts__phone,
+.map .contacts .mail__item, .map .contacts__schedule {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+}
+.map .contacts .mail__item::before {
+  width: 28px;
+  height: 23px;
+  content: url(../img/svg/map/mail.svg);
+}
+.map .contacts .mail__linck, .map .contacts__days {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  line-height: 1;
+}
+.map .contacts .mail__linck .text-secondary {
+  font-size: 1.8rem;
+}
+.map .contacts__schedule::before {
+  width: 28px;
+  height: 28px;
+  content: url(../img/svg/map/clock.svg);
+}
+.map .contacts__footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.map .contacts .social-list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.map .contacts .grade {
+  margin-left: auto;
+  width: 220px;
+  height: 60px;
+  background-color: #dedede;
+}
+
 .footer {
   padding: 45px 0 80px;
   background-color: #67adde;
