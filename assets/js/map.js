@@ -1,5 +1,5 @@
 function init() {
-	let map = new ymaps.Map('map-test', {
+	let map = new ymaps.Map('map', {
 		center: [55.752067322940405,37.12033652906236],
 		zoom: 10
 	});
